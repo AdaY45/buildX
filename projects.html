@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Projects</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>BuildX</title>
+    <link rel="stylesheet" type="text/css" href="style/style.css">
+    <link rel="stylesheet" type="text/css" href="style/media.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&family=Rubik:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet"><script src="https://code.iconify.design/1/1.0.6/iconify.min.js"></script>
+    <link rel="stylesheet" href="style/flickity.css" media="screen">
+    <script src="https://kit.fontawesome.com/ceebfa1978.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+  <div class="container">
+    <div class="hero projects-page">
+      <header>
+        <a href="#" class="logo__og"><img src="images/Logo.svg" alt="logo"></a>
+        <div class="btn--burger">
+          <span style="cursor:pointer" id="burger" class="burger">&#9776;</span>
+        </div>
+        <nav id="nav" class="nav">
+          <a href="javascript:void(0)" class="btn--close" onclick="closeNav()">&times;</a>
+          <a href="#" class="logo"><img src="images/Logo.svg" alt="logo"></a>
+          <div class="btn btn--menu">
+            <a href="index.html" class="btn__menu active">Головна</a>
+            <a href="projects.html" class="btn__menu prj">Проекти</a>
+            <a href="how-to-order.html" class="btn__menu">Як замовити?</a>
+          </div>
+          <div class="btn btn--func">
+            <button onclick="modalWindow('id01')" id="btn-reg" class="btn__registration">Реєстрація</button>
+
+            <button onclick="modalWindow('id02')" id="btn-log" class="btn__login">Вхід</button>
+
+            <a href="contacts.html" class="btn__contacts">Контакти</a>
+          </div>
+        </nav>
+
+        <div id="id01" class="modal registration">
+          <div class="modal__container reg-block">
+            <form class="modal__content animate form reg-form" method="post">
+              <input type="text" placeholder="Ім’я" name="name" required>
+              <input type="text" placeholder="Номер телефону" name="phoneNumber" required>
+              <input type="text" placeholder="Електронна почта" name="email" required>
+              <input type="password" placeholder="Пароль" name="password" required>
+              <input type="password" placeholder="Повторити пароль" name="repeatPassword" required>
+              <button type="submit" class="btn__register">Зареєструватись</button>
+              <div class="login">Вже є аккаунт?<a class="btn__reg" href="#"><strong>Вхід</strong></a></div>
+            </form>
+            <div class="modal__content animate img">
+              <a href="#" class="logo"><img src="images/Logo.svg" alt="logo"></a>
+            </div>
+          </div>
+        </div>
+
+        <div id="id02" class="modal login">
+          <div class="modal__container login-block">
+            <form class="modal__content animate form login-form" method="post">
+              <input type="text" placeholder="Електронна почта" name="email" required>
+              <input type="password" placeholder="Пароль" name="password" required>
+              <button type="submit" class="btn__register login-btn">Вхід</button>
+              <div class="login">Немає аккаунту?<a class="btn__reg" href="#"><strong>Зареєструватись</strong></a></div>
+            </form>
+            <div class="modal__content animate img">
+              <a href="#" class="logo"><img src="images/Logo.svg" alt="logo"></a>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <aside>
+        <div class="social__block">
+          <div class="social__wrapper">
+            <a href="#" class="btn__social">
+              <h3>Facebook</h3>
+              <img src="images/social_media/facebook.svg" alt="facebook">
+            </a>
+            <a href="#" class="btn__social">
+              <h3>YouTube</h3>
+              <img src="images/social_media/youtube.svg" alt="youtube">
+            </a>
+            <a href="#" class="btn__social">
+              <h3>Instagram</h3>
+              <img src="images/social_media/instagram.svg" alt="instagram">
+            </a>
+          </div>
+        </div>
+      </aside>
+
+      <div class="gallery js-flickity" data-flickity-options='{ "wrapAround": true }'>
+          <div class="gallery-cell static">
+            <img src="images/projects/slider1.jpg">
+            <div class="overlay popular">
+              <div class="text-wrap">
+                <div class="overlay__text">Популярно на BuildX</div>
+                <div class="overlay__icon">
+                  <img src="images/projects/popular.svg">
+                </div>
+              </div>
+            </div>
+
+            <div class="overlay project-kink">
+                <div class="project__info">
+                  <div class="project__id">ID-2545678</div>
+                  <div class="project__name">Проект “Сніжний”</div>
+                </div>
+
+                <div class="details s">
+                  <p>4</p>
+                  <span class="iconify" data-inline="false" data-icon="ion:bed" style="font-size: 20.03205108642578px;"></span>
+                  <p>3</p>
+                  <span class="iconify" data-inline="false" data-icon="fa-solid:shower" style="font-size: 20.03205108642578px;"></span>
+                  <p>6</p>
+                  <span class="iconify" data-inline="false" data-icon="fluent:conference-room-20-filled" style="font-size: 20.03205108642578px;"></span>
+                </div>
+
+                <a href="#">
+                  <div class="project__info th">
+                    <div class="project__price">15 тис. грн.</div>
+                    <img src="images/projects/arrow.svg" alt="">
+                  </div>
+                </a>
+            </div>
+          </div>
+
+          <div class="gallery-cell">
+            <img src="images/projects/slider2.jpg">
+            <div class="overlay popular">
+              <div class="text-wrap">
+                <div class="overlay__text">Популярно на BuildX</div>
+                <div class="overlay__icon">
+                  <img src="images/projects/popular.svg">
+                </div>
+              </div>
+            </div>
+
+            <div class="overlay project-kink">
+                <div class="project__info">
+                  <div class="project__id">ID-2545678</div>
+                  <div class="project__name">Проект “Сніжний”</div>
+                </div>
+
+                <div class="details s">
+                  <p>4</p>
+                  <span class="iconify" data-inline="false" data-icon="ion:bed" style="font-size: 20.03205108642578px;"></span>
+                  <p>3</p>
+                  <span class="iconify" data-inline="false" data-icon="fa-solid:shower" style="font-size: 20.03205108642578px;"></span>
+                  <p>6</p>
+                  <span class="iconify" data-inline="false" data-icon="fluent:conference-room-20-filled" style="font-size: 20.03205108642578px;"></span>
+                </div>
+
+                <a href="#">
+                  <div class="project__info th">
+                    <div class="project__price">15 тис. грн.</div>
+                    <img src="images/projects/arrow.svg" alt="">
+                  </div>
+                </a>
+            </div>
+          </div>
+
+          <div class="gallery-cell">
+            <img src="images/projects/slider3.jpg">
+            <div class="overlay popular">
+              <div class="text-wrap">
+                <div class="overlay__text">Популярно на BuildX</div>
+                <div class="overlay__icon">
+                  <img src="images/projects/popular.svg">
+                </div>
+              </div>
+            </div>
+
+            <div class="overlay project-kink">
+                <div class="project__info">
+                  <div class="project__id">ID-2545678</div>
+                  <div class="project__name">Проект “Сніжний”</div>
+                </div>
+
+                <div class="details s">
+                  <p>4</p>
+                  <span class="iconify" data-inline="false" data-icon="ion:bed"></span>
+                  <p>3</p>
+                  <span class="iconify" data-inline="false" data-icon="fa-solid:shower"></span>
+                  <p>6</p>
+                  <span class="iconify" data-inline="false" data-icon="fluent:conference-room-20-filled"></span>
+                </div>
+
+                <a href="#">
+                  <div class="project__info th">
+                    <div class="project__price">15 тис. грн.</div>
+                    <img src="images/projects/arrow.svg" alt="">
+                  </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="search-section white-back">
+          <div class="small-text">Унікальні персональні проекти</div>
+          <h1>Ми підберемо Вам найкращий варіант!</h1>
+          <div class="search-container">
+            <form action="#">
+              <div class="search-form">
+                <input type="text" placeholder="Хай-тек" name="search">
+              </div>
+              <button type="submit" class="btn btn__begin projects-page">Шукати</button>    
+            </form>
+          </div>
+        </div>
+
+        <div class="filter-section s">
+          <div class="search-container">
+            <form action="#">
+              <div class="search-form filter">
+                <input type="text" id="search" onkeyup="searchFunc()" placeholder="ID">  
+              </div>
+            </form>
+          </div>
+          <div class="filter-container">
+            <div class="filter-block">
+              <form action="#" class="filter-form">
+                <table>
+                  <tr>
+                    <th></th>
+                    <th>1</th>
+                    <th>2</th>
+                    <th>3</th>
+                    <th>4</th>
+                    <th>5+</th>
+                  </tr>
+                  <tr>
+                    <td><span class="iconify" data-inline="false" data-icon="ion:bed"></span></td>
+                    <td><input class="radio-btn" type="radio" id="1-bed" name="bed" value="1-bed" checked></td>
+                    <td><input class="radio-btn" type="radio" id="2-bed" name="bed" value="2-bed"></td>
+                    <td><input class="radio-btn" type="radio" id="3-bed" name="bed" value="3-bed"></td>
+                    <td><input class="radio-btn" type="radio" id="4-bed" name="bed" value="4-bed"></td>
+                    <td><input class="radio-btn" type="radio" id="5-bed" name="bed" value="5-bed"></td>
+                  </tr>
+                  <tr>
+                    <td><span class="iconify" data-inline="false" data-icon="fa-solid:shower"></span></td>
+                    <td><input class="radio-btn" type="radio" id="1-shower" name="shower" value="1-shower" checked></td>
+                    <td><input class="radio-btn" type="radio" id="2-shower" name="shower" value="2-shower"></td>
+                    <td><input class="radio-btn" type="radio" id="3-shower" name="shower" value="3-shower"></td>
+                    <td><input class="radio-btn" type="radio" id="4-shower" name="shower" value="4-shower"></td>
+                    <td><input class="radio-btn" type="radio" id="5-shower" name="shower" value="5-shower"></td>
+                  </tr>
+                  <tr>
+                    <td><span class="iconify" data-inline="false" data-icon="fluent:conference-room-20-filled"></span></td>
+                    <td><input class="radio-btn" type="radio" id="1-room" name="room" value="1-room" checked></td>
+                    <td><input class="radio-btn" type="radio" id="2-room" name="room" value="2-room"></td>
+                    <td><input class="radio-btn" type="radio" id="3-room" name="room" value="3-room"></td>
+                    <td><input class="radio-btn" type="radio" id="4-room" name="room" value="4-room"></td>
+                    <td><input class="radio-btn" type="radio" id="5-room" name="room" value="5-room"></td>
+                  </tr>
+                </table>
+
+                  <div class="slide">
+                    <div class="details filter">
+                      <p>Площа, м<sup>2</sup></p>
+                      <span class="iconify" data-inline="false" data-icon="bx:bx-area" style="color: #606b74; font-size: 16px;"></span>
+                    </div>
+                    <div data-role="rangeslider">
+                      <input type="range" name="square" class="range-slider" id="range-square" value="square" min="0" max="412" oninput="inputSquare()">
+                      <div class="range-text">
+                        <p id="range-min-square">0</p>
+                        <p>—</p>
+                        <p>412</p>
+                      </div>
+                    </div>
+                    <div class="details filter">
+                      <p>Ціна, грн</p>
+                      <span class="iconify" data-inline="false" data-icon="dashicons:money-alt" style="color: #606b74; font-size: 18px;"></span>
+                    </div>
+                    <div data-role="rangeslider">
+                      <input type="range" name="price" class="range-slider" id="range-price" value="price" min="0" max="41200" oninput="inputPrice()">
+                      <div class="range-text">
+                        <p id="range-min-price">0</p>
+                        <p>—</p>
+                        <p>41200</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="check-container">
+                    <input type="checkbox" id="garage" name="garage" value="Гараж" class="checkbox" checked>
+                    <label>Гараж</label><br>
+                    <input type="checkbox" id="bed" name="bed" value="Спальня на 1-му поверсі"  class="checkbox">
+                    <label>Спальня на 1-му поверсі</label><br>
+                    <input type="checkbox" id="fam" name="fam" value="Сімейний"  class="checkbox">
+                    <label>Сімейний</label><br>
+                    <button type="submit" class="btn btn__begin projects-page">Шукати</button> 
+                  </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <main>
+        <section class="all-projects">
+          <h1 class="fancy"><span>Усі проекти</span></h1>
+          <div class="all-projects__container">
+            <div class="project" onclick="window.location='#'" tabindex="1">
+                <img src="images/project-1.jpg" alt="project">
+                <div class="project__info">
+                    <div class="project__id">ID-2545678</div>
+                    <div class="project__name">Проект “Сніжний”</div>
+                </div>
+                <div class="project__info">
+                    <a href="#" class="btn btn__more">Переглянути</a>
+                    <div class="project_details">
+                        <div class="details f">
+                            <span class="iconify" data-inline="false" data-icon="bx:bx-area" style="color: #606b74; font-size: 16px;"></span>
+                            <p>250 м<sup>2</sup></p>
+                            <span class="iconify" data-inline="false" data-icon="dashicons:money-alt" style="color: #606b74; font-size: 18px;"></span>
+                            <p>15000 грн</p>
+                        </div>
+                        <div class="details s">
+                            <p>4</p>
+                            <span class="iconify" data-inline="false" data-icon="ion:bed" style="font-size: 20.03205108642578px;"></span>
+                            <p>3</p>
+                            <span class="iconify" data-inline="false" data-icon="fa-solid:shower" style="font-size: 20.03205108642578px;"></span>
+                            <p>6</p>
+                            <span class="iconify" data-inline="false" data-icon="fluent:conference-room-20-filled" style="font-size: 20.03205108642578px;"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project" onclick="window.location='#'" tabindex="1">
+                <img src="images/project-2.jpg" alt="project">
+                <div class="project__info">
+                    <div class="project__id">ID-5545678</div>
+                    <div class="project__name">Проект “Вестленд”</div>
+                </div>
+                <div class="project__info">
+                    <a href="#" class="btn btn__more">Переглянути</a>
+                    <div class="project_details">
+                        <div class="details f">
+                            <span class="iconify" data-inline="false" data-icon="bx:bx-area" style="color: #606b74; font-size: 16px;"></span>
+                            <p>95 м<sup>2</sup></p>
+                            <span class="iconify" data-inline="false" data-icon="dashicons:money-alt" style="color: #606b74; font-size: 18px;"></span>
+                            <p>9000 грн</p>
+                        </div>
+                        <div class="details s">
+                            <p>4</p>
+                            <span class="iconify" data-inline="false" data-icon="ion:bed" style="font-size: 20.03205108642578px;"></span>
+                            <p>3</p>
+                            <span class="iconify" data-inline="false" data-icon="fa-solid:shower" style="font-size: 20.03205108642578px;"></span>
+                            <p>6</p>
+                            <span class="iconify" data-inline="false" data-icon="fluent:conference-room-20-filled" style="font-size: 20.03205108642578px;"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project" onclick="window.location='#'" tabindex="1">
+                <img src="images/project-3.jpg" alt="project">
+                <div class="project__info">
+                    <div class="project__id">ID-3545678</div>
+                    <div class="project__name">Проект “OnenG”</div>
+                </div>
+                <div class="project__info">
+                    <a href="#" class="btn btn__more">Переглянути</a>
+                    <div class="project_details f">
+                        <div class="details f">
+                            <span class="iconify" data-inline="false" data-icon="bx:bx-area" style="color: #606b74; font-size: 16px;"></span>
+                            <p>250 м<sup>2</sup></p>
+                            <span class="iconify" data-inline="false" data-icon="dashicons:money-alt" style="color: #606b74; font-size: 18px;"></span>
+                            <p>15000 грн</p>
+                        </div>
+                        <div class="details s">
+                            <p>4</p>
+                            <span class="iconify" data-inline="false" data-icon="ion:bed" style="font-size: 20.03205108642578px;"></span>
+                            <p>3</p>
+                            <span class="iconify" data-inline="false" data-icon="fa-solid:shower" style="font-size: 20.03205108642578px;"></span>
+                            <p>6</p>
+                            <span class="iconify" data-inline="false" data-icon="fluent:conference-room-20-filled" style="font-size: 20.03205108642578px;"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project" onclick="window.location='#'" tabindex="1">
+                <img src="images/project-4.jpg" alt="project">
+                <div class="project__info">
+                    <div class="project__id">ID-9545678</div>
+                    <div class="project__name">Проект “Кліо”</div>
+                </div>
+                <div class="project__info">
+                    <a href="#" class="btn btn__more">Переглянути</a>
+                    <div class="project_details">
+                        <div class="details f">
+                            <span class="iconify" data-inline="false" data-icon="bx:bx-area" style="color: #606b74; font-size: 16px;"></span>
+                            <p>250 м<sup>2</sup></p>
+                            <span class="iconify" data-inline="false" data-icon="dashicons:money-alt" style="color: #606b74; font-size: 18px;"></span>
+                            <p>15000 грн</p>
+                        </div>
+                        <div class="details s">
+                            <p>4</p>
+                            <span class="iconify" data-inline="false" data-icon="ion:bed" style="font-size: 20.03205108642578px;"></span>
+                            <p>3</p>
+                            <span class="iconify" data-inline="false" data-icon="fa-solid:shower" style="font-size: 20.03205108642578px;"></span>
+                            <p>6</p>
+                            <span class="iconify" data-inline="false" data-icon="fluent:conference-room-20-filled" style="font-size: 20.03205108642578px;"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button type="submit" class="btn btn__begin">Далі</button> 
+          </div>
+        </section>
+      </main>
+
+      <footer>
+        <div class="section-1">
+            <div class="item auth">
+                <span class="iconify" data-inline="false" data-icon="carbon:login" style="font-size: 24px;"></span>
+                <button onclick="modalWindow('id01')" id="btn-reg-footer" class="btn__menu">Реєстрація</button>
+                <p>/</p>
+                <button onclick="modalWindow('id02')" id="btn-log-footer" class="btn__menu">Вхід</button>
+            </div>
+
+            <div class="item">
+                <a href="#" class="btn btn__menu pr">
+                    <span class="iconify" data-inline="false" data-icon="bi:arrow-up-square" style="font-size: 24px;"></span>
+                    <p>На початок</p>
+                </a>
+            </div>
+
+            <div class="item social">
+                <a href='#'><img src="images/social_media/facebook-black.svg" alt="facebook"></a>
+                <a href='#'><img src="images/social_media/instagram-black.svg" alt="instagram"></a>
+                <a href='#'><img src="images/social_media/youtube-black.svg" alt="youtube"></a>
+            </div>
+
+            <div class="item">
+                <a href="#" class="btn btn__menu">
+                    <span class="iconify" data-inline="false" data-icon="clarity:design-line" style="font-size: 24px;"></span>
+                    <p>Проекти</p>
+                </a>
+            </div>
+
+            <div class="item">
+                <a href="#" class="btn btn__menu last">
+                    <span class="iconify" data-inline="false" data-icon="ic:outline-border-color" style="font-size: 24px;"></span>
+                    <p>Як зробити замовлення</p>
+                </a>
+            </div>
+        </div>
+
+        <div class="section-2">
+            <ul>
+                <li>
+                    <img src="images/icons/email.svg" alt="email">
+                    <p>buildX_info@gmail.com</p>
+                </li>
+                <li class="second-li">
+                    <img src="images/icons/phone.svg" alt="phone">
+                    <p>+380951231235</p>
+                </li>
+                <li class="logo-footer">
+                    <a href="#"><img src="images/icons/Logo-footer.svg" alt="logo"></a>
+                </li>
+                <li class="cookie">
+                    <a href="#">
+                        <span class="iconify" data-inline="false" data-icon="fluent:cookies-20-regular" style="color: #ffffff;"></span>
+                        <p>Cookies</p>
+                    </a>
+                </li>
+                <li class="last">
+                    <a href="#" class="last">
+                        <img src="images/icons/privacy.svg" alt="privacy">
+                        <p>Політика конфіденційності</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+    </div>
+  </div>
+  <script src="./script/script.js"></script>
+  <script src="./script/flickity.pkgd.min.js"></script>
+</body>
+</html>
